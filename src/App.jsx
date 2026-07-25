@@ -10,6 +10,7 @@ import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import Sales from "./pages/Sales";
 import Supplier from "./pages/Supplier";
+import FloatingAssistant from "./components/FloatingAssistant";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         </div>
 
       </div>
+
     </HashRouter>
   );
 }
