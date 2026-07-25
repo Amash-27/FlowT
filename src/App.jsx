@@ -1,0 +1,41 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+
+import Dashboard from "./pages/Dashboard";
+import Inventory from "./pages/Inventory";
+import Customers from "./pages/Customers";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
+import Sales from "./pages/Sales";
+import Supplier from "./pages/Supplier";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="app">
+
+        <Sidebar />
+
+        <div className="main-content">
+          <Navbar />
+
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/inventory" element={<Inventory />} />
+            <Route path="/customers" element={<Customers />} />
+            <Route path="/suppliers" element={<Supplier />} />
+            <Route path="/sales" element={<Sales />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+
+        </div>
+
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;

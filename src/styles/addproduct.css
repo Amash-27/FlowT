@@ -1,0 +1,144 @@
+.product-form{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+
+
+.product-form input,
+.product-form select{
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #e2e8f0;
+
+    font-size:15px;
+
+    background:#fff;
+
+}
+
+
+
+.product-form input:focus,
+.product-form select:focus{
+
+    outline:none;
+
+    border-color:#4f46e5;
+
+}
+
+
+
+.upload-box{
+
+    grid-column:1/-1;
+
+    height:120px;
+
+    border:2px dashed #c7d2fe;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    color:#4f46e5;
+
+    cursor:pointer;
+
+    background:#eef2ff;
+
+}
+
+
+.upload-box input{
+
+    display:none;
+
+}
+
+
+
+.image-preview{
+
+    grid-column:1/-1;
+
+    text-align:center;
+
+}
+
+
+
+.image-preview img{
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    border:3px solid #e2e8f0;
+
+}
+
+
+
+
+.form-actions{
+
+    grid-column:1/-1;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+
+.form-actions button{
+
+    padding:13px 25px;
+
+    border-radius:12px;
+
+}
+
+
+
+.cancel-btn{
+
+    background:#64748b;
+
+}
+
+
+
+@media(max-width:768px){
+
+.product-form{
+
+    grid-template-columns:1fr;
+
+}
+
+}

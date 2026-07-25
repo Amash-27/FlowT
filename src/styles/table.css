@@ -1,0 +1,238 @@
+.table-card{
+    background:white;
+    padding:28px;
+    border-radius:20px;
+    margin-top:30px;
+
+    border:1px solid #e2e8f0;
+
+    box-shadow:
+    0 15px 35px rgba(15,23,42,.08);
+}
+
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:25px;
+}
+
+
+.table-header h2{
+    color:#0f172a;
+    font-size:22px;
+}
+
+
+.table-header p{
+    color:#64748b;
+    margin-top:5px;
+}
+
+
+
+/* Search */
+
+.search-box{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#f8fafc;
+
+    padding:10px 15px;
+
+    border-radius:12px;
+
+    border:1px solid #e2e8f0;
+
+}
+
+
+.search-box input{
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+}
+
+
+
+/* Table */
+
+.table-wrapper{
+    overflow-x:auto;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+thead{
+    background:#f1f5f9;
+}
+
+
+th{
+
+    text-align:left;
+
+    padding:15px;
+
+    color:#475569;
+
+    font-size:14px;
+
+}
+
+
+td{
+
+    padding:15px;
+
+    border-bottom:
+    1px solid #e2e8f0;
+
+    color:#334155;
+
+}
+
+
+
+tbody tr{
+
+    transition:.25s;
+
+}
+
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+
+/* Badges */
+
+.badge{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+.sale{
+
+    background:#dcfce7;
+    color:#16a34a;
+
+}
+
+
+.expense{
+
+    background:#fee2e2;
+    color:#dc2626;
+
+}
+
+
+
+/* Amount */
+
+.amount{
+
+    font-weight:700;
+
+}
+
+
+
+/* Buttons */
+
+.icon-btn{
+
+    width:35px;
+    height:35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    margin-right:8px;
+
+    cursor:pointer;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.edit{
+
+    background:#e0e7ff;
+    color:#4f46e5;
+
+}
+
+
+.delete{
+
+    background:#fee2e2;
+    color:#dc2626;
+
+}
+
+
+.icon-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+.empty{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#64748b;
+
+}
+
+
+
+@media(max-width:768px){
+
+.table-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+}
+
+}
