@@ -5,33 +5,28 @@ import AIChat from "./AIChat";
 
 function FloatingAssistant(){
 
- const [open,setOpen]=useState(false);
+  const [open,setOpen] = useState(false);
 
 
- return(
+  return (
+    <>
 
-  <>
-
-   {
-    open &&
-
-    <AIChat
-      closeChat={()=>setOpen(false)}
-    />
-
-   }
+      {open && (
+        <AIChat
+          closeChat={() => setOpen(false)}
+        />
+      )}
 
 
-   <div onClick={()=>setOpen(true)}>
+      <div
+        onClick={() => setOpen(true)}
+      >
+        <Flowy />
+      </div>
 
-      <Flowy />
 
-   </div>
-
-
-  </>
-
- );
+    </>
+  );
 
 }
 

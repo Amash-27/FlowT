@@ -4,16 +4,21 @@ import "../styles/flowy.css";
 function Flowy() {
 
   return (
+
     <motion.div
+
       className="flowy"
+
       animate={{
-        y: [0, -12, 0],
+        y:[0,-12,0]
       }}
+
       transition={{
-        duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut",
+        duration:3,
+        repeat:Infinity,
+        ease:"easeInOut"
       }}
+
     >
 
       <div className="flowy-face">
@@ -23,9 +28,11 @@ function Flowy() {
           <span>◕</span>
         </div>
 
+
         <div className="mouth">
           ᴗ
         </div>
+
 
       </div>
 
@@ -36,7 +43,9 @@ function Flowy() {
 
 
     </motion.div>
+
   );
+
 }
 
 export default Flowy;
