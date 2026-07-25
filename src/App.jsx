@@ -11,6 +11,7 @@ import Settings from "./pages/Settings";
 import Sales from "./pages/Sales";
 import Supplier from "./pages/Supplier";
 import FloatingAssistant from "./components/FloatingAssistant";
+import Flowy from "./components/Flowy";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/sales" element={<Sales />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/flowy" element={<Flowy />} />
           </Routes>
 
         </div>
