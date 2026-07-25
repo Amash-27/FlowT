@@ -1,8 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const SupplierContext = createContext();
 
-export function SupplierProvider({ children }) {
+function SupplierProvider({ children }) {
   const [suppliers, setSuppliers] = useState(() => {
     const saved = localStorage.getItem("suppliers");
     return saved ? JSON.parse(saved) : [];
@@ -56,3 +57,5 @@ export function SupplierProvider({ children }) {
     </SupplierContext.Provider>
   );
 }
+
+export { SupplierProvider };

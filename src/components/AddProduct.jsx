@@ -35,7 +35,7 @@ function AddProduct() {
   useEffect(()=>{
 
     if(editingProduct){
-
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setForm({
         name:editingProduct.name || "",
         category:editingProduct.category || "",

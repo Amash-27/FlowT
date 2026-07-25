@@ -24,6 +24,7 @@ function Supplier() {
 
   useEffect(() => {
     if (editingSupplier) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setForm({
         name: editingSupplier.name,
         company: editingSupplier.company,

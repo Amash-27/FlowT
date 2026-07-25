@@ -129,19 +129,6 @@ sum+c.totalSpent,
 
 
 
-const averagePurchase =
-customers.length
-
-?
-
-totalRevenue/customers.length
-
-:
-
-0;
-
-
-
 
 
 

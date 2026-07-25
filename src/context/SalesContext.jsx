@@ -4,10 +4,11 @@ import {
   useState,
 } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const SalesContext =
   createContext();
 
-export function SalesProvider({
+function SalesProvider({
   children,
 }) {
 
@@ -64,5 +65,7 @@ export function SalesProvider({
     </SalesContext.Provider>
   );
 }
+
+export { SalesProvider };
 
 export default SalesContext;

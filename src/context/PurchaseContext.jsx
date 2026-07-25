@@ -1,8 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const PurchaseContext = createContext();
 
-export function PurchaseProvider({ children }) {
+function PurchaseProvider({ children }) {
   const [purchases, setPurchases] = useState(() => {
     const saved = localStorage.getItem("purchases");
     return saved ? JSON.parse(saved) : [];
@@ -50,3 +51,5 @@ export function PurchaseProvider({ children }) {
     </PurchaseContext.Provider>
   );
 }
+
+export { PurchaseProvider };

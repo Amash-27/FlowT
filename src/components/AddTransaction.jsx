@@ -16,6 +16,7 @@ function AddTransaction() {
   });
   useEffect(() => {
   if (editingTransaction) {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setForm({
       customer: editingTransaction.customer,
       amount: editingTransaction.amount,

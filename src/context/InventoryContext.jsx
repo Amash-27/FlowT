@@ -1,8 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const InventoryContext = createContext();
 
-export function InventoryProvider({ children }) {
+function InventoryProvider({ children }) {
   const [editingProduct, setEditingProduct] = useState(null);
 
   const [products, setProducts] = useState(() => {
@@ -122,3 +123,5 @@ export function InventoryProvider({ children }) {
     </InventoryContext.Provider>
   );
 }
+
+export { InventoryProvider };

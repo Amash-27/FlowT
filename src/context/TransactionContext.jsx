@@ -1,8 +1,9 @@
 import { createContext, useState, useEffect } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const TransactionContext = createContext();
 
-export function TransactionProvider({ children }) {
+function TransactionProvider({ children }) {
 
   const [transactions, setTransactions] = useState(() => {
     const saved = localStorage.getItem("transactions");
@@ -77,3 +78,5 @@ function updateTransaction(updatedTransaction) {
     </TransactionContext.Provider>
   );
 }
+
+export { TransactionProvider };

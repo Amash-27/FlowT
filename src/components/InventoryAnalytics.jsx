@@ -36,8 +36,7 @@ function InventoryAnalytics() {
     );
 
 
-
-
+  // eslint-disable-next-line react-hooks/preserve-manual-memoization
   const categoryData = useMemo(()=>{
 
 
